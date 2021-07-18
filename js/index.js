@@ -6,7 +6,7 @@
 // -------------------------------------------------------------------------------------
 // 1. Implicit Binding
 
-const hero = {
+const spidey = {
     firstName: 'Peter',
     lastName: 'Parker',
     fullName: function () {
@@ -15,7 +15,7 @@ const hero = {
 };
 
 console.log('1. Implicit Binding');
-console.log('Full Name: ', hero.fullName());
+console.log('Spidey: ', spidey.fullName());
 
 // -------------------------------------------------------------------------------------
 // 2. Explicit Binding
@@ -87,3 +87,14 @@ click2.click();
 console.log('5. Global Object');
 
 console.log('Object: ', this);
+
+// -------------------------------------------------------------------------------------
+// 6. Arrow Functions/Methods
+const arrowGuy = {
+    firstName: 'Clint',
+    lastName: 'Barton',
+    fullName: () => `${this.firstName} ${this.lastName}`
+};
+
+console.log('6. Arrow Functions/Methods');
+console.log('Arrow Guy: ', arrowGuy.fullName());    
