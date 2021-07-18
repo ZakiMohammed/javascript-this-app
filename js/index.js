@@ -67,6 +67,7 @@ console.log('Book 2', book2);
 console.log('4. HTML Event');
 
 const click1 = document.getElementById('click1');
+const click2 = document.getElementById('click2');
 
 click1.addEventListener('click', function () {
     console.log('Click 1 Handler: ', this);
@@ -76,6 +77,9 @@ function click2Handler() {
     // 'use strict'
     console.log('Click 2 Handler: ', this);
 }
+
+click1.click();
+click2.click();
 
 // -------------------------------------------------------------------------------------
 // 5. Global Object
