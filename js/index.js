@@ -106,6 +106,12 @@ prettyCasual();
 
 // -------------------------------------------------------------------------------------
 // 6. Arrow Functions/Methods
+
+const openArrow = () => {
+    'use strict'
+    console.log('Arrow Function:', this);
+};
+
 const arrowGuy1 = {
     arrowCount: 5,
     shootArrow: () => {
@@ -123,6 +129,8 @@ const arrowGuy2 = {
 };
 
 console.log('6. Arrow Functions/Methods');
+
+openArrow();
 
 arrowGuy1.shootArrow();
 arrowGuy2.shootArrow();
